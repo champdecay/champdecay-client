@@ -5,7 +5,7 @@ export default function Contact() {
     return (
         <section className="text-gray-300 body-font relative">
             <div className="container px-5 py-24 mx-auto">
-                <Title title="Get in Touch" />
+                <Title>Get in Touch</Title>
                 <div className="lg:w-1/2 md:w-2/3 mx-auto">
                     <div className="flex flex-wrap -m-2">
                         <div className="p-2 w-1/2">

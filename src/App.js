@@ -9,12 +9,13 @@ export default function App() {
   return (
     <BrowserRouter>
       <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/blog" element={<Blog />} />
-        <Route path="/blog/:slug" element={<Post />} />
-      </Routes>
+      <main className="bg-white mb-96">
+        <Routes>
+          <Route path="/" element={<Blog />} />
+          <Route path="/about" element={<Home />} />
+          <Route path="/blog/:slug" element={<Post />} />
+        </Routes>
+      </main>
       <Footer />
     </BrowserRouter>
   )
@@ -30,23 +31,6 @@ function Home() {
       </main>
       <nav>
         <Link to="/about">About</Link>
-      </nav>
-    </>
-  );
-}
-
-function About() {
-  return (
-    <>
-      <main>
-        <h2>Who are we?</h2>
-        <p>
-          That feels like an existential question, don't you
-          think?
-        </p>
-      </main>
-      <nav>
-        <Link to="/">Home</Link>
       </nav>
     </>
   );

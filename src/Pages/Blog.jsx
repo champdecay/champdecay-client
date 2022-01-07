@@ -17,11 +17,14 @@ export default function Blog() {
 
     return (
         <>
-            <FeaturedBlog />
-            <section className="text-gray-600 body-font">
-                <div className="container py-5 mx-auto text-center">
-                    <Title title="Latest Articles" />
+            {/* <FeaturedBlog /> */}
+            <section>
+                <div className="container py-5 text-center">
+                    <Title>Latest Articles</Title>
                     <div className="flex flex-wrap my-4">
+                        {blog && blog.map((item, i) => {
+                            return <Blogbox key={item._id} data={item} />
+                        })}
                         {blog && blog.map((item, i) => {
                             return <Blogbox key={item._id} data={item} />
                         })}

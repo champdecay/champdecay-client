@@ -1,45 +1,32 @@
 export default function Footer() {
     return (
-        <footer className="text-gray-300 body-font">
-            <div className="">
-                <div className="container px-5 py-8 flex flex-wrap mx-auto items-center">
-                    <div className="flex md:flex-nowrap flex-wrap justify-center items-end md:justify-start w-full items-center">
-                        <div className="relative sm:w-86 w-56 sm:mr-4 mr-2">
-                            <input type="text" id="footer-field" name="footer-field" placeholder="abc@example.com" className="w-full text-gray-300 bg-transparent rounded border border-gray-200 border-2 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
-                        </div>
-                        <button className="inline-flex text-white bg-indigo-500 py-2 px-6 rounded border-indigo-500 border-2">Subscribe</button>
-                        <p className="text-gray-500 text-sm md:ml-6 md:mt-0 mt-2 sm:text-left text-center"> Subscribe to receive <br className="lg:block hidden" />new articles</p>
-                    </div>
-                    <span className="sm:hidden inline-flex lg:ml-auto lg:mt-0 mt-6 w-full justify-center md:justify-start md:w-auto">
-                        <a className="text-gray-300">
-                            <svg fill="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-5 h-5" viewBox="0 0 24 24">
-                                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
-                            </svg>
-                        </a>
-                        <a className="ml-3 text-gray-300">
-                            <svg fill="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-5 h-5" viewBox="0 0 24 24">
-                                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
-                            </svg>
-                        </a>
-                        <a className="ml-3 text-gray-300">
-                            <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-5 h-5" viewBox="0 0 24 24">
-                                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
-                                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
-                            </svg>
-                        </a>
-                        <a className="ml-3 text-gray-300">
-                            <svg fill="currentColor" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="0" className="w-5 h-5" viewBox="0 0 24 24">
-                                <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
-                                <circle cx="4" cy="4" r="2" stroke="none"></circle>
-                            </svg>
-                        </a>
-                    </span>
-                </div>
+        <footer className="flex items-center bg-indigo-50 h-96 fixed bottom-0 w-full -z-10">
+            <div className="mx-4 w-1/2 mx-auto sm:w-full sm:px-4 sm:text-center">
+                <h2 className="my-4 font-high text-3xl"><a href="mailto:champdecay@gmail.com">champdecay@gmail.com</a></h2>
+                <p>Always down to collaborate when I have the time. Let's get in touch ✌️.</p>
+                <ul className="flex items-center my-4 sm:justify-center">
+                    <li><a href="https://stackoverflow.com/users/7738692/dhruvang-gajjar" className="p-2 block mr-4"><svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" fill="#000" viewBox="0 0 384 512" stroke="#000">
+                        <path fill="#4338ca" d="M290.7 311L95 269.7 86.8 309l195.7 41zm51-87L188.2 95.7l-25.5 30.8 153.5 128.3zm-31.2 39.7L129.2 179l-16.7 36.5L293.7 300zM262 32l-32 24 119.3 160.3 32-24zm20.5 328h-200v39.7h200zm39.7 80H42.7V320h-40v160h359.5V320h-40z"></path>
+                    </svg></a></li>
+                    <li><a href="https://twitter.com/champdecay" className="p-2 block mr-4"><svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" fill="#4338ca" viewBox="0 0 512 512" stroke="#000">
+                        <path fill="#4338ca" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path>
+                    </svg></a></li>
+                    <li><a href="https://github.com/dhruvangg" className="p-2 block mr-4"><svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 496 512" stroke="#000">
+                        <path fill="#4338ca" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path>
+                    </svg></a></li>
+                    <li><a href="https://dev.to/dhruvangg"><svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 496 512" stroke="#000">
+                        <path fill="#4338ca" d="M120.12 208.29c-3.88-2.9-7.77-4.35-11.65-4.35H91.03v104.47h17.45c3.88 0 7.77-1.45 11.65-4.35 3.88-2.9 5.82-7.25 5.82-13.06v-69.65c-.01-5.8-1.96-10.16-5.83-13.06zM404.1 32H43.9C19.7 32 .06 51.59 0 75.8v360.4C.06 460.41 19.7 480 43.9 480h360.2c24.21 0 43.84-19.59 43.9-43.8V75.8c-.06-24.21-19.7-43.8-43.9-43.8zM154.2 291.19c0 18.81-11.61 47.31-48.36 47.25h-46.4V172.98h47.38c35.44 0 47.36 28.46 47.37 47.28l.01 70.93zm100.68-88.66H201.6v38.42h32.57v29.57H201.6v38.41h53.29v29.57h-62.18c-11.16.29-20.44-8.53-20.72-19.69V193.7c-.27-11.15 8.56-20.41 19.71-20.69h63.19l-.01 29.52zm103.64 115.29c-13.2 30.75-36.85 24.63-47.44 0l-38.53-144.8h32.57l29.71 113.72 29.57-113.72h32.58l-38.46 144.8z"></path>
+                    </svg></a></li>
+                </ul>
+                <p className="">Copyright © ChampDecay 2022</p>
             </div>
-            <div className="bg-gray-900">
-                <div className="container mx-auto py-4 px-5">
-                    <p className="text-gray-300 text-sm text-center">© {new Date().getFullYear()} ChampDecay</p>
-                </div>
+            <div className="hidden fixed bg-black bg-opacity-50 w-screen h-screen top-0 left-0 z-10 flex justify-center items-center">
+                <form id="contact" className="w-96 rounded-xl overflow-hidden bg-gradient-to-r from-purple-50 to-purple-100 p-10" data-hs-cf-bound="true">
+                    <h3 className="text-center mb-4 text-2xl">Get in Touch</h3>
+                    <div className="mb-4"><input type="text" name="name" placeholder="Your Name" className="flex border border-transparent w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-md rounded-lg text-base focus:outline-none" required="" /></div>
+                    <div className="mb-4"><input type="email" name="email" placeholder="Your Email" className="flex border border-transparent w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-md rounded-lg text-base focus:outline-none" required="" /></div>
+                    <div className="mb-4"><textarea name="message" placeholder="Your Message" className="flex border border-transparent w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-md rounded-lg text-base resize-none focus:outline-none" required=""></textarea></div><button className="bg-yellow-400 w-full text-white text-base font-semibold py-2 px-4 rounded-lg shadow-md focus:outline-none">Send Message</button>
+                </form>
             </div>
         </footer>
     )
