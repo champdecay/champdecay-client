@@ -25,9 +25,6 @@ export default function Blog() {
                         {blog && blog.map((item, i) => {
                             return <Blogbox key={item._id} data={item} />
                         })}
-                        {blog && blog.map((item, i) => {
-                            return <Blogbox key={item._id} data={item} />
-                        })}
                     </div>
                 </div >
             </section >

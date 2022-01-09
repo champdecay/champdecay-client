@@ -20,8 +20,8 @@ export default function Header() {
                     </div>
                     <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
                         <div className="flex-shrink-0 flex items-center">
-                            <div className="block lg:hidden h-8 w-auto text-white text-5xl logo">CD</div>
-                            <div className="hidden lg:block h-8 w-auto text-white text-2xl logo">ChampDecay</div>
+                            {/* <div className="block lg:hidden h-8 w-auto text-white text-5xl logo">CD</div> */}
+                            <div className="h-8 w-auto text-white text-2xl logo">ChampDecay</div>
                             {/* <img className="block lg:hidden h-8 w-auto" src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg" alt="Workflow" />
                             <img className="hidden lg:block h-8 w-auto" src="https://tailwindui.com/img/logos/workflow-logo-indigo-500-mark-white-text.svg" alt="Workflow" /> */}
                         </div>
@@ -61,17 +61,17 @@ export default function Header() {
             </div>
 
 
-            <div className="sm:hidden" id="mobile-menu">
+            {/* <div className="sm:hidden" id="mobile-menu">
                 <div className="px-2 pt-2 pb-3 space-y-1">
-                    {/* <a href="#" className="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium" aria-current="page">Dashboard</a>
+                    <a href="#" className="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium" aria-current="page">Dashboard</a>
 
                     <a href="#" className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Team</a>
 
                     <a href="#" className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Projects</a>
 
-                    <a href="#" className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Calendar</a> */}
+                    <a href="#" className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Calendar</a>
                 </div>
-            </div>
+            </div> */}
         </nav>
 
     )

@@ -42,7 +42,7 @@ export default function Post() {
                 {data.featured_image ? <div className="text-gray-900">
                     <div className="container  flex px-5 py-24 md:flex-row flex-col items-center">
                         <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
-                            <img className="object-cover object-center rounded" alt="hero" src={data.featured_image} />
+                            <img className="object-cover object-center rounded" alt="hero" src={data.featured_image} width={600} height={400} />
                         </div>
                         <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center max-w-screen-lg">
                             <h2 className="font-bold text-indigo-700 mb-1"><span className="uppercase">{data.tags.map(el => el)}</span> | {dayjs(data.createdAt).format("Do MMM, YYYY")}</h2>
@@ -59,11 +59,9 @@ export default function Post() {
                         </div>
                     </div>
                 </div>}
-                <div className="container">
-                    <article className="prose lg:prose-xl mx-auto">
-                        {data.content && <ReactMarkdown>{data.content}</ReactMarkdown>}
-                    </article>
-                </div>
+                <article className="container prose lg:prose-xl mx-auto px-4">
+                    {data.content && <ReactMarkdown>{data.content}</ReactMarkdown>}
+                </article>
             </div>
     )
 }

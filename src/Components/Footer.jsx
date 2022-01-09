@@ -1,8 +1,8 @@
 export default function Footer() {
     return (
         <footer className="flex items-center bg-indigo-50 h-96 fixed bottom-0 w-full -z-10">
-            <div className="mx-4 w-1/2 mx-auto sm:w-full sm:px-4 sm:text-center">
-                <h2 className="my-4 font-high text-3xl"><a href="mailto:champdecay@gmail.com">champdecay@gmail.com</a></h2>
+            <div className="mx-4 max-w-1/2 mx-auto sm:w-full sm:px-4 sm:text-center">
+                <h2 className="my-4 text-xl sm:text-3xl"><a href="mailto:champdecay@gmail.com">champdecay@gmail.com</a></h2>
                 <p>Always down to collaborate when I have the time. Let's get in touch ✌️.</p>
                 <ul className="flex items-center my-4 sm:justify-center">
                     <li><a href="https://stackoverflow.com/users/7738692/dhruvang-gajjar" className="p-2 block mr-4"><svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" fill="#000" viewBox="0 0 384 512" stroke="#000">

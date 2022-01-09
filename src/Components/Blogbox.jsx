@@ -9,7 +9,7 @@ export default function Blogbox({ data }) {
         <div className="p-4 lg:w-1/4 sm:w-1/2">
             {featured_image ?
                 <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-                    <img className="lg:h-48 md:h-36 w-full object-cover object-center" src={featured_image} alt="blog" />
+                    <img className="lg:h-48 md:h-36 w-full object-cover object-center" src={featured_image} alt="blog" width={300} height={200} />
                     <div className="p-6">
                         <h4 className="font-bold text-indigo-700 mb-1 text-sm">{tags.map(el => `${el} `)} | {dayjs(createdAt).format("Do MMM, YYYY")}</h4>
                         <h2 className="title-font text-lg font-bold  mb-3">{name}</h2>
